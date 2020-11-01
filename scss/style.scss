@@ -27,9 +27,6 @@ $dark-secondary: #463F3A;
     text-transform: uppercase;
 
     .nav-link {
-      &.active,
-      &:active,
-      &.hover,
       &:hover {
         color: $primary;
       }
@@ -41,6 +38,16 @@ $dark-secondary: #463F3A;
 
 .footer {
   background-color: $default-light;
+  a {
+    color: #8D8D8D;
+    font-size: 12px;
+    margin: 1rem 69px;
+    
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
 }
 
 .main {
@@ -52,6 +59,11 @@ $dark-secondary: #463F3A;
     padding: 64px 0;
     font-size: 34px;
     color: $dark-secondary;
+  }
+
+  .main__list {
+    padding-bottom: 60px;
+    margin: 0;
   }
 }
 
