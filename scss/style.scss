@@ -1,0 +1,97 @@
+// block__element--modifier
+
+// menu-font: ArchivoNarrow-Regular
+
+// heading-font: OpenSans-Regular
+
+$primary: #C32C72;
+$default-light: #F4F3EE;
+$main-bg: #E5E5E5;
+
+$dark: #262626;
+$dark-secondary: #463F3A;
+
+.navbar {
+  background-color: $default-light;
+  position: relative;
+
+  &__branding {
+    font-size: 36px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-nav {
+    text-transform: uppercase;
+
+    .nav-link {
+      &.active,
+      &:active,
+      &.hover,
+      &:hover {
+        color: $primary;
+      }
+
+
+    }
+  }
+}
+
+.footer {
+  background-color: $default-light;
+}
+
+.main {
+  &__background {
+    background-color: $main-bg;
+  }
+
+  h1 {
+    padding: 64px 0;
+    font-size: 34px;
+    color: $dark-secondary;
+  }
+}
+
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.card {
+  margin-bottom: 25px;
+  width: 100%;  
+  min-height: 263px;
+  max-width: 264px;
+  max-height: 263px;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 300ms;
+  box-shadow: 0 0 5px 5px rgba($color: #000000, $alpha: 0.05);
+  
+  &__outline {
+    border: 1px $primary solid;
+  }
+
+  &__default {
+    background-color: $default-light;
+  }
+
+  &__featured {
+    background-color: $primary;
+  }
+
+  &:hover {
+    transition-duration: 300ms;
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 768px)  {
+    width: 357px;  
+    height: 355px;
+  }
+}
